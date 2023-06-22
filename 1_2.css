@@ -1,0 +1,54 @@
+
+ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+
+.menu {
+    width: 100%;
+    overflow: hidden;
+}
+ 
+.menu > li {
+    width: 20%; /*20*5=100%*/
+    /* 세로 정렬이므로 필요 없음
+    float: left;
+    */
+    text-align: center;
+    line-height: 60px;
+    background-color: lightcoral;
+}
+
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.menu a:hover {
+    font-weight: 700;
+}
+
+
+.submenu > li {
+    line-height: 50px;
+    background-color: burlywood;
+}
+
+
+.submenu {
+    display: none;
+}
+
+
+.menu > li:hover {
+    background-color: burlywood;
+    transition-duration: 0.5s;
+}
+
+
+.menu > li:hover .submenu {
+    display: block;
+}

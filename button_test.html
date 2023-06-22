@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3일차_일일퀴즈_2</title>
+    <style>
+        .button_type {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 7px;
+            background-color: bisque;
+        }
+        .button_type:hover{
+            background-color: palegreen;
+        }
+        #check {
+            display: none;
+        }
+        /* #text{
+            display: none;
+        } */
+        #check:checked + #text {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <button class="button_type">button</button>
+    <input id="check" type="checkbox">
+    <nav id="text">
+        <ul>
+            <li>"개발에 대한 두려움, 오르미 2기와 함께 날려버리자!"</li>
+        </ul>
+    </nav>
+
+</body>
+</html>
